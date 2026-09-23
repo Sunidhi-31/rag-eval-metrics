@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data
+data/*
+!data/.gitkeep
+
+# Results
+results/*
+!results/.gitkeep
+
+# Environment variables / secrets
+.env
+*.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/

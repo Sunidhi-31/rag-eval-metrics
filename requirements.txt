@@ -1,0 +1,15 @@
+transformers>=4.44
+datasets>=2.20
+accelerate>=0.33
+bitsandbytes>=0.43
+sentence-transformers>=3.0
+bert-score>=0.3.13
+rouge-score>=0.1.2
+nltk>=3.8
+evaluate>=0.4.2
+scikit-learn>=1.5
+torch>=2.3
+pandas>=2.2
+numpy>=1.26
+matplotlib>=3.9
+seaborn>=0.13
