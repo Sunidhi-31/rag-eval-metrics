@@ -1,0 +1,2 @@
+metric,device,compute_time_seconds,note
+rouge,cpu (Colab),25.4,timed in 04_comparative_analysis; scores identical to saved file

@@ -1,0 +1,5 @@
+metric,model_or_method,device,compute_time_seconds,val_threshold,val_f1,test_accuracy,test_precision,test_recall,test_f1,test_roc_auc,test_pr_auc
+rouge1_precision,rouge-score (ROUGE-1),cpu,,0.8118,0.7016,0.6527,0.5622,0.8562,0.6788,0.7298,0.606
+bertscore_precision,roberta-large,cuda (T4),169.47,0.902768,0.6815,0.577,0.5036,0.902,0.6464,0.7219,0.6095
+nli_hallucination_score (1 - entailment_fraction),roberta-large-mnli,cuda (T4),1305.0,0.6,0.6128,0.4762,0.4472,0.9412,0.6063,0.5115,0.4313
+llm_judge_p_no (zero-shot Yes/No probability),microsoft/Phi-3-mini-4k-instruct,cuda (T4),914.3,0.3140420019626617,0.7023,0.6162,0.5323,0.8627,0.6584,0.6783,0.5395

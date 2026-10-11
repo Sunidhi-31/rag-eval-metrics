@@ -1,15 +1,16 @@
-transformers>=4.44
-datasets>=2.20
-accelerate>=0.33
-bitsandbytes>=0.43
-sentence-transformers>=3.0
-bert-score>=0.3.13
-rouge-score>=0.1.2
-nltk>=3.8
-evaluate>=0.4.2
-scikit-learn>=1.5
-torch>=2.3
+# Analysis notebook (04) was run with the versions in docs/environment_versions.txt
+# (Google Colab CPU runtime). The GPU runtimes used for notebooks 01-03 were not
+# recorded and may have differed; the bert-score version was not recorded.
+numpy>=2.1
 pandas>=2.2
-numpy>=1.26
-matplotlib>=3.9
-seaborn>=0.13
+scipy>=1.16
+scikit-learn>=1.6
+matplotlib>=3.10
+tqdm>=4.67
+rouge-score>=0.1.2
+nltk>=3.9
+bert-score
+torch>=2.3
+transformers>=4.44
+accelerate>=0.33
+sentencepiece

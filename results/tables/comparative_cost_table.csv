@@ -1,0 +1,7 @@
+system,hardware,seconds_for_1781_responses,ms_per_response,test_roc_auc
+rouge,CPU only,25.4,14.3,0.73
+bertscore,T4 GPU,169.5,95.2,0.722
+nli,T4 GPU,1305.0,732.7,0.511
+llm,T4 GPU,914.3,513.4,0.678
+hybrid4,T4 GPU + CPU (sum of components),2414.2,1355.5,0.739
+hybrid3,T4 GPU + CPU (sum of components),1109.2,622.8,0.745

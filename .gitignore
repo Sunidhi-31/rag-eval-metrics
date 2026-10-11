@@ -11,13 +11,16 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
-# Data
+# Raw / copied dataset text (rebuild with notebooks/00_setup_and_data_exploration.ipynb)
 data/*
 !data/.gitkeep
+ragtruth_eval_dataframe.csv
+ragtruth_stratified_sample.csv
 
-# Results
-results/*
-!results/.gitkeep
+# Large or intermediate outputs that are not versioned
+ragtruth_nli_sentence_scores.csv
+ragtruth_llmjudge_checkpoint.csv
+rouge_baseline_bootstrap_ci.csv
 
 # Environment variables / secrets
 .env
