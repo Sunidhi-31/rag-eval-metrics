@@ -33,12 +33,16 @@ reference answer (RAGTruth has none). This is an adapted use of both metrics.
 
   | System | Rule for "hallucinated" | Validation-selected threshold |
   |---|---|---|
-  | ROUGE | ROUGE-1 precision <= t | 0.8118 (as saved, 4 decimals) |
-  | BERTScore | BERTScore precision <= t | 0.902768 |
+  | ROUGE | raw ROUGE-1 precision <= t | 0.8118 (as saved, 4 decimals) |
+  | BERTScore | raw BERTScore precision <= t | 0.902768 |
   | NLI | score >= t | 0.600000 |
   | LLM judge | P(No) >= t | 0.314042 |
   | Hybrid-4 | score >= t | 0.355454 |
   | Hybrid-3 | score >= t | 0.347066 |
+
+  The ROUGE and BERTScore thresholds are on the raw precision values, as saved in
+  `metric_run_metadata.csv`. On the oriented scores used elsewhere (`1 - precision`)
+  the same rules read `score >= 0.1882` and `score >= 0.097232`.
 
 - **Hybrids:** each oriented score is converted to a percentile rank against the *training split
   only* (no labels), then averaged with equal weights. No weights are learned. The design was fixed
